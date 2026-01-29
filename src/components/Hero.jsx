@@ -185,7 +185,9 @@ const Hero = () => {
                     </a>
 
                     <a
-                        href="/brochure.pdf"
+                        href="/arivoli2k26.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group relative px-8 py-4 bg-transparent border border-white/20 text-white font-bold font-orbitron rounded-xl overflow-hidden transition-all hover:border-neon-purple hover:text-neon-purple"
                     >
                         <span className="relative flex items-center justify-center">

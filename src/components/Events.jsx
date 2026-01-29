@@ -356,7 +356,7 @@ const Events = () => {
             {/* Event Details Modal */}
             <AnimatePresence>
                 {selectedEvent && (
-                    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
+                    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6">
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -464,7 +464,7 @@ const Events = () => {
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                                             <a
-                                                href="/rulebook.pdf"
+                                                href="/arivoli2k26.pdf"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="flex items-center justify-center gap-2 w-full py-4 text-center bg-white/5 border-2 border-neon-purple hover:bg-neon-purple/10 text-neon-purple font-bold font-orbitron rounded-xl hover:shadow-[0_0_30px_rgba(188,19,254,0.3)] transition-all transform hover:-translate-y-1 uppercase tracking-widest"

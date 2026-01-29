@@ -39,7 +39,7 @@ The project includes a `vercel.json` for proper rewrites if needed, though Vite 
 - `src/components/`: Reusable UI sections (Hero, About, Events, etc.)
 - `src/App.jsx`: Main entry point with layout.
 - `src/index.css`: Global styles & Tailwind directives.
-- `public/`: Static assets like images and rulebook.
+- `public/`: Static assets like images and arivoli2k26.
 
 ## ✨ Features
 - **Modern Futuristic UI**: Neon theme, glassmorphism, smooth animations.
