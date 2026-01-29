@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Globe, Award, Zap } from 'lucide-react';
+import { Cpu, Globe, Award, Zap, Mail } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     className="text-3xl sm:text-4xl md:text-5xl font-bold font-orbitron mb-4"
                 >
-                    ABOUT <span className="text-neon-purple">THE EVENT</span>
+                    ABOUT
                 </motion.h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-neon-blue to-neon-purple mx-auto mb-12 rounded-full"></div>
             </div>
@@ -76,15 +76,13 @@ const About = () => {
             </div>
 
             <div className="mt-20 text-center">
-                <h3 className="text-xl font-bold font-orbitron text-gray-400 mb-8 tracking-widest">HOSTED BY DEPARTMENTS</h3>
-                <div className="flex flex-wrap justify-center gap-4">
-                    {['CSE', 'IT', 'CSBS', 'AI&DS'].map((dept) => (
-                        <div key={dept} className="relative group px-8 py-3 bg-bg-dark rounded-full overflow-hidden border border-neon-blue/30 hover:border-neon-blue transition-all cursor-crosshair">
-                            <span className="relative z-10 font-orbitron font-bold text-white group-hover:text-black transition-colors">{dept}</span>
-                            <div className="absolute inset-0 bg-neon-blue transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-                        </div>
-                    ))}
-                </div>
+                <a
+                    href="mailto:arivoli2k26@kiot.ac.in"
+                    className="inline-flex items-center gap-3 text-neon-blue font-orbitron text-lg sm:text-xl font-bold hover:text-white transition-colors duration-300 group"
+                >
+                    <Mail className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                    arivoli2k26@kiot.ac.in
+                </a>
             </div>
         </SectionWrapper>
     );

@@ -39,6 +39,7 @@ const Events = () => {
                 icon: Terminal,
                 details: {
                     description: "ERROR 404 is a Capture The Flag (CTF) event that tests participants’ cybersecurity, logical thinking, and problem-solving skills through security-based challenges.",
+                    image: "/error-404.png",
                     rules: {
                         "Rules & Regulations": [
                             "CTF-based competition",
@@ -65,6 +66,7 @@ const Events = () => {
                 icon: Code2,
                 details: {
                     description: "Coding Maniac is a competitive coding event that tests participants’ programming skills, logical thinking, and problem-solving abilities through MCQ, debugging, and coding challenges.",
+                    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1000",
                     rules: {
                         "Guidelines": [
                             "Two rounds: MCQ & Debugging, and Coding",
@@ -90,6 +92,7 @@ const Events = () => {
                 icon: PenTool,
                 details: {
                     description: "Present innovative ideas and research in AI & Data Science, focusing on next-generation technologies.",
+                    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=1000",
                     rules: {
                         "Quick Rules": [
                             "Team: 3–4 members",
@@ -150,6 +153,7 @@ const Events = () => {
                 icon: Brain,
                 details: {
                     description: "Hands-on workshop on building LLM-based chatbots, covering prompt design, backend integration, and cloud deployment using real-world architectures.",
+                    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
                     rules: {
                         "Key Rules": [
                             "Pre-registration mandatory (only this workshop)",
@@ -174,6 +178,7 @@ const Events = () => {
                 icon: Zap,
                 details: {
                     description: "An interactive workshop introducing AI concepts, tools, chatbots, and prompt engineering through real-world examples and hands-on learning. No prior experience required.",
+                    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000",
                     resourcePerson: "VijayaKumar Manickavasagam, Technology Analyst, Infosys",
                     rules: {
                         "Key Details": [
@@ -223,6 +228,7 @@ const Events = () => {
                 icon: Mic2,
                 details: {
                     description: "A fun non-technical event where participants create and perform a short, original advertisement for a given product, testing creativity, communication, and confidence.",
+                    image: "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=1000",
                     rules: {
                         "Quick Rules": [
                             "Individual or 2-member teams",
@@ -248,6 +254,7 @@ const Events = () => {
                 icon: Gamepad2,
                 details: {
                     description: "A fast-paced event where participants complete fun challenges in under 60 seconds, testing speed, skill, and creativity.",
+                    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1000",
                     rules: {
                         "Quick Rules": [
                             "60 seconds per game",

@@ -47,9 +47,11 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-neon-purple font-bold font-orbitron mb-1">Call Us</h4>
-                                    <p className="text-gray-300 text-sm font-inter">Student Co-ordinators:</p>
-                                    <p className="text-white font-bold tracking-wide mt-1 font-inter">+91 89460 92297 (Nega Sri R)</p>
-                                    <p className="text-white font-bold tracking-wide font-inter">+91 85085 13234 (Gowtham S)</p>
+                                    <p className="text-gray-300 text-sm font-inter mb-2">Student Co-ordinators:</p>
+                                    <p className="text-white font-bold tracking-wide font-inter">+91 89460 92297 - Nega Sri R</p>
+                                    <p className="text-white font-bold tracking-wide font-inter">+91 85085 13234 - Gowtham S</p>
+                                    <p className="text-white font-bold tracking-wide font-inter">+91 82201 53508 - Sanjay A</p>
+                                    <p className="text-white font-bold tracking-wide font-inter">+91 89250 84660 - Divakar Y N</p>
                                 </div>
                             </div>
 
@@ -59,23 +61,28 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-neon-pink font-bold font-orbitron mb-1">Email Us</h4>
-                                    <p className="text-gray-300 text-sm font-inter">arivolisymposium@kiot.ac.in</p>
+                                    <a href="mailto:arivoli2k26@kiot.ac.in" className="text-gray-300 text-sm font-inter hover:text-neon-pink transition-colors">arivoli2k26@kiot.ac.in</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="glass-card p-2 h-64 overflow-hidden relative group">
+                    <a
+                        href="https://www.google.com/maps/place/Knowledge+Institute+of+Technology+(KIOT)/@11.5533648,78.0202518,596m/data=!3m1!1e3!4m6!3m5!1s0x3babe40754d8480f:0x4bf024dfe3e621ec!8m2!3d11.554069!4d78.0190263!16s%2Fm%2F0c01_6z!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block glass-card p-2 h-64 overflow-hidden relative group cursor-pointer"
+                    >
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.689617835848!2d77.9620073153676!3d11.56536699178923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babe461e737194d%3A0x6b772023023e61c6!2sKnowledge%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1625123456789!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
-                            style={{ border: 0 }}
+                            style={{ border: 0, pointerEvents: 'none' }}
                             allowFullScreen=""
                             loading="lazy"
                             className="rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500"
                         ></iframe>
-                    </div>
+                    </a>
                 </motion.div>
 
                 {/* Contact Form */}
@@ -91,13 +98,15 @@ const Contact = () => {
                         <MessageSquare className="text-neon-blue" /> Send a Message
                     </h3>
 
-                    <form className="space-y-6">
+                    <form action="mailto:arivoli2k26@kiot.ac.in" method="post" encType="text/plain" className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-gray-400 ml-1 font-inter">Name</label>
                                 <input
                                     type="text"
+                                    name="name"
                                     placeholder="John Doe"
+                                    required
                                     className="w-full bg-bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:shadow-[0_0_10px_rgba(0,243,255,0.2)] transition-all font-inter"
                                 />
                             </div>
@@ -105,7 +114,9 @@ const Contact = () => {
                                 <label className="text-sm font-bold text-gray-400 ml-1 font-inter">Email</label>
                                 <input
                                     type="email"
+                                    name="email"
                                     placeholder="john@example.com"
+                                    required
                                     className="w-full bg-bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:shadow-[0_0_10px_rgba(0,243,255,0.2)] transition-all font-inter"
                                 />
                             </div>
@@ -115,7 +126,9 @@ const Contact = () => {
                             <label className="text-sm font-bold text-gray-400 ml-1 font-inter">Subject</label>
                             <input
                                 type="text"
+                                name="subject"
                                 placeholder="Event Enquiry"
+                                required
                                 className="w-full bg-bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:shadow-[0_0_10px_rgba(0,243,255,0.2)] transition-all font-inter"
                             />
                         </div>
@@ -124,7 +137,9 @@ const Contact = () => {
                             <label className="text-sm font-bold text-gray-400 ml-1 font-inter">Message</label>
                             <textarea
                                 rows="4"
+                                name="message"
                                 placeholder="How can we help you?"
+                                required
                                 className="w-full bg-bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:shadow-[0_0_10px_rgba(0,243,255,0.2)] transition-all font-inter resize-none"
                             ></textarea>
                         </div>

@@ -4,12 +4,12 @@ import { Clock } from 'lucide-react';
 
 const Schedule = () => {
     const scheduleItems = [
-        { time: '09:00 AM', event: 'Inauguration', description: 'Opening ceremony with Chief Guest' },
-        { time: '10:00 AM', event: 'Keynote Speech', description: 'Future of AI & Robotics' },
-        { time: '11:00 AM', event: 'Technical Events Start', description: 'Paper Presentation, Coding, etc.' },
-        { time: '01:00 PM', event: 'Lunch Break', description: 'Refreshments provided' },
-        { time: '02:00 PM', event: 'Non-Technical Events', description: 'Gaming, Quiz, and Fun activities' },
-        { time: '04:00 PM', event: 'Valedictory', description: 'Prize Distribution & Closing Ceremony' },
+        { time: '09:00 AM', event: 'Registration & Verification', description: 'Participant check-in and kit distribution' },
+        { time: '10:00 AM', event: 'Inauguration', description: 'Grand opening ceremony' },
+        { time: '11:00 AM', event: 'Technical Events & Workshops', description: 'Project Expo, Paper Presentation, Coding & AI Sessions' },
+        { time: '01:00 PM', event: 'Lunch Break', description: 'Lunch will be provided for all participants' },
+        { time: '02:00 PM', event: 'Non-Technical Events', description: 'Fun challenges, Gaming, and Creative activities' },
+        { time: '04:45 PM', event: 'Bus Departure', description: 'Safe travel back from the campus' },
     ];
 
     return (
@@ -31,23 +31,22 @@ const Schedule = () => {
                                 <div className="absolute inset-0 bg-neon-blue rounded-full animate-ping opacity-20"></div>
                             </div>
 
-                            {/* Time - Desktop */}
-                            <div className="hidden md:block w-1/2 px-8 text-right font-orbitron text-neon-blue text-xl font-bold">
-                                {index % 2 === 0 ? item.time : ''}
-                            </div>
-                            <div className="hidden md:block w-1/2 px-8 text-left font-orbitron text-neon-blue text-xl font-bold">
-                                {index % 2 !== 0 ? item.time : ''}
+                            {/* Time Section - Desktop */}
+                            <div className={`hidden md:flex w-1/2 px-8 items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                                <div className="font-orbitron text-neon-blue text-xl font-bold">
+                                    {item.time}
+                                </div>
                             </div>
 
                             {/* Content Card */}
                             <div className="w-full md:w-1/2 px-12 md:px-8 mt-2 md:mt-0">
-                                <div className="glass-card p-6 hover:border-neon-blue/50 transition-colors group">
+                                <div className="glass-card p-6 border-white/10 hover:border-neon-blue/50 transition-colors group">
                                     <div className="md:hidden text-neon-blue font-orbitron font-bold mb-2 flex items-center">
                                         <Clock className="w-4 h-4 mr-2" />
                                         {item.time}
                                     </div>
                                     <h3 className="text-xl font-bold text-white mb-2 group-hover:text-neon-blue transition-colors">{item.event}</h3>
-                                    <p className="text-gray-400 text-sm">{item.description}</p>
+                                    <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
                                 </div>
                             </div>
                         </div>
