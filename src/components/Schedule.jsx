@@ -5,11 +5,12 @@ import { Clock } from 'lucide-react';
 const Schedule = () => {
     const scheduleItems = [
         { time: '09:00 AM', event: 'Registration & Verification', description: 'Participant check-in and kit distribution' },
-        { time: '10:00 AM', event: 'Inauguration', description: 'Grand opening ceremony' },
-        { time: '11:00 AM', event: 'Technical Events & Workshops', description: 'Project Expo, Paper Presentation, Coding & AI Sessions' },
-        { time: '01:00 PM', event: 'Lunch Break', description: 'Lunch will be provided for all participants' },
-        { time: '02:00 PM', event: 'Non-Technical Events', description: 'Fun challenges, Gaming, and Creative activities' },
-        { time: '04:45 PM', event: 'Bus Departure', description: 'Safe travel back from the campus' },
+        { time: '10:00 AM', event: 'Inauguration Ceremony', description: 'Formal opening of ARIVOLI’26' },
+        { time: '11:00 AM', event: 'Technical Events & Workshops', description: 'Project Expo, Paper Presentation, Coding, and AI sessions' },
+        { time: '01:00 PM', event: 'Lunch Session', description: 'Lunch will be served to all participants' },
+        { time: '02:00 PM', event: 'Non-Technical Events', description: 'Fun challenges, gaming, and creative activities' },
+        { time: '04:45 PM', event: 'Valedictory & Conclusion', description: 'Closing ceremony and vote of thanks for ARIVOLI 26!' }
+
     ];
 
     return (
