@@ -60,16 +60,7 @@ const About = () => {
                         { image: "/ICTA.png", highlight: "ICTACADEMY", },
                         { image: "/iste-logo.png", highlight: "ISTE", },
                         { image: "/IEEE.png", highlight: "IEEE", }
-                    ].concat([
-                        { image: "/NAAC.png", highlight: "NAAC A", },
-                        { image: "/nba-logo.png", highlight: "NBA", },
-                        { image: "/idealab.png", highlight: "IDEALAB", },
-                        { image: "/istart.png", highlight: "ISTART", },
-                        { image: "/IIC.png", highlight: "INSTITUTION'S INNOVATION COUNCIL", },
-                        { image: "/ICTA.png", highlight: "ICTACADEMY", },
-                        { image: "/iste-logo.png", highlight: "ISTE", },
-                        { image: "/IEEE.png", highlight: "IEEE", }
-                    ]).map((item, index) => (
+                    ].map((item, index) => (
                         <div
                             key={index}
                             className="inline-flex flex-col items-center justify-start w-[240px] sm:w-[320px] px-6 flex-shrink-0 h-full">
