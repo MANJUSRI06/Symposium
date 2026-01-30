@@ -3,7 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Cpu } from 'lucide-react';
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [activeLink, setActiveLink] = useState('Home');
+
+    const navLinks = [
+        { name: 'Home', href: '#' },
+        { name: 'Events', href: '#events' },
+        { name: 'Schedule', href: '#schedule' },
+        { name: 'About', href: '#about' },
+        { name: 'Contact', href: '#contact' },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,14 +39,6 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [scrolled]); // Removed activeLink from dependency array to avoid unnecessary re-renders
-
-    const navLinks = [
-        { name: 'Home', href: '#' },
-        { name: 'Events', href: '#events' },
-        { name: 'Schedule', href: '#schedule' },
-        { name: 'About', href: '#about' },
-        { name: 'Contact', href: '#contact' },
-    ];
 
     return (
         <nav
