@@ -86,10 +86,10 @@ const Hero = () => {
                         className="mt-4 flex flex-col items-center gap-2"
                     >
                         <span className="text-[10px] sm:text-xs font-orbitron text-neon-blue tracking-widest uppercase opacity-80">
-                            HOSTED BY DEPARTMENTS
+                            HOSTED BY DEPARTMENTS OF
                         </span>
                         <div className="flex flex-wrap justify-center gap-2 sm:gap-8 items-center">
-                            {['CSE', 'IT', 'CSBS', '&', 'AI&DS'].map((dept, idx) => (
+                            {['CSE', 'IT', 'CSBS', 'AND', 'AI&DS'].map((dept, idx) => (
                                 <React.Fragment key={dept}>
                                     <span className="text-white font-orbitron font-bold text-sm sm:text-lg tracking-widest hover:text-neon-blue transition-colors cursor-default neon-text-small">
                                         {dept}

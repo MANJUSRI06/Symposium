@@ -39,7 +39,7 @@ const Registration = () => {
                                 <h4 className="text-xl font-bold font-orbitron text-white mb-2">Registration Fee</h4>
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-4xl font-bold text-neon-blue">₹250</span>
-                                    <span className="text-sm text-gray-400 font-inter">(Inc. GST)</span>
+                                    <span className="text-sm text-gray-400 font-inter">(Incl. GST)</span>
                                 </div>
                                 <p className="text-gray-400 text-sm mt-2 font-inter">Per Participant | Access to all technical & non-technical events</p>
                             </div>
@@ -47,6 +47,17 @@ const Registration = () => {
                     </div>
 
                     <div className="glass-card p-8 text-center border-neon-blue/30 relative">
+<< main
+                        <div className="bg-white p-2 rounded-xl inline-block mb-6 shadow-[0_0_20px_rgba(0,212,255,0.2)]">
+                            <img
+                                src="/payment-qr.png"
+                                alt="Payment QR Code"
+                                className="w-48 h-auto sm:w-64 rounded-lg"
+                            />
+                        </div>
+                        <p className="text-sm text-gray-300 font-bold mb-1">Merchant Name: M/S.KNOWLEDGE INSTITUTE OF TECHNOLOGY- THE PRINCIPAL</p>
+                        <p className="text-xs text-gray-400 font-inter">Mobile Number: 9790018181</p>
+=======
                         <h4 className="text-lg font-bold font-orbitron text-white mb-6">Scan to Pay via UPI</h4>
                         <div className="bg-white p-4 rounded-xl inline-block mb-6 shadow-[0_0_20px_rgba(0,212,255,0.2)]">
                             <img
@@ -57,6 +68,7 @@ const Registration = () => {
                         </div>
                         <p className="text-sm text-gray-300 font-bold mb-1">M/S. KNOWLEDGE INSTITUTE OF TECHNOLOGY - THE PRINCIPAL</p>
                         <p className="text-xs text-gray-500 font-inter">Mobile: 97900 18181</p>
+>> main
                     </div>
                 </motion.div>
 

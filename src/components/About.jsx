@@ -53,23 +53,23 @@ const About = () => {
                 {/* The Marquee Container */}
                 <div className="flex w-max whitespace-nowrap animate-marquee">
                     {[
-                        { image: "/NAAC.png", highlight: "NAAC A", sub: "Accredited" },
-                        { image: "/nba-logo.png", highlight: "NBA", sub: "Approved" },
-                        { image: "/idealab.png", highlight: "IDEALAB", sub: "Approved" },
-                        { image: "/istart.png", highlight: "ISTART", sub: "Approved" },
-                        { image: "/IIC.png", highlight: "IIC", sub: "Approved" },
-                        { image: "/ICTA.png", highlight: "ICTACADEMY", sub: "Approved" },
-                        { image: "/iste-logo.png", highlight: "ISTE", sub: "Approved" },
-                        { image: "/IEEE.png", highlight: "IEEE", sub: "Approved" }
+                        { image: "/NAAC.png", highlight: "NAAC A", },
+                        { image: "/nba-logo.png", highlight: "NBA",  },
+                        { image: "/idealab.png", highlight: "IDEALAB",  },
+                        { image: "/istart.png", highlight: "ISTART",  },
+                        { image: "/IIC.png", highlight: "IIC",},
+                        { image: "/ICTA.png", highlight: "ICTACADEMY",  },
+                        { image: "/iste-logo.png", highlight: "ISTE", },
+                        { image: "/IEEE.png", highlight: "IEEE", }
                     ].concat([
-                        { image: "/NAAC.png", highlight: "NAAC A", sub: "Accredited" },
-                        { image: "/nba-logo.png", highlight: "NBA", sub: "Approved" },
-                        { image: "/idealab.png", highlight: "IDEALAB", sub: "Approved" },
-                        { image: "/istart.png", highlight: "ISTART", sub: "Approved" },
-                        { image: "/IIC.png", highlight: "IIC", sub: "Approved" },
-                        { image: "/ICTA.png", highlight: "ICTACADEMY", sub: "Approved" },
-                        { image: "/iste-logo.png", highlight: "ISTE", sub: "Approved" },
-                        { image: "/IEEE.png", highlight: "IEEE", sub: "Approved" }
+                        { image: "/NAAC.png", highlight: "NAAC A", },
+                        { image: "/nba-logo.png", highlight: "NBA",  },
+                        { image: "/idealab.png", highlight: "IDEALAB", },
+                        { image: "/istart.png", highlight: "ISTART",  },
+                        { image: "/IIC.png", highlight: "IIC", },
+                        { image: "/ICTA.png", highlight: "ICTACADEMY",  },
+                        { image: "/iste-logo.png", highlight: "ISTE", },
+                        { image: "/IEEE.png", highlight: "IEEE", }
                     ]).map((item, index) => (
                         <div
                             key={index}
