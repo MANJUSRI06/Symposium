@@ -40,51 +40,40 @@ const About = () => {
                         <Award className="mr-3" /> KIOT
                     </h3>
                     <p className="text-gray-300 leading-relaxed font-inter text-justify">
-                        Knowledge Institute of Technology (KIOT), Salem is a premier institution approved by AICTE and affiliated to Anna University.
-                        Accredited with NAAC 'A' Grade and NBA, KIOT is an Autonomous institution committed to excellence in engineering education.
+                        Knowledge Institute of Technology (KIOT), Salem, is a premier institution approved by AICTE and affiliated with Anna University. Accredited with NAAC ‘A’ Grade and NBA, KIOT is an autonomous institution committed to quality and innovation in engineering education.
                     </p>
                 </div>
             </div>
 
             {/* Accreditation Marquee Section */}
-            <div className="relative overflow-hidden py-16 mt-10">
+            <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden py-10">
                 {/* Visual Fades for a premium look */}
 
                 {/* The Marquee Container */}
                 <div className="flex w-max whitespace-nowrap animate-marquee">
                     {[
-                        { image: "/NAAC.png", highlight: "NAAC A", sub: "Accredited" },
-                        { image: "/nba-logo.png", highlight: "NBA", sub: "Approved" },
-                        { image: "/idealab.png", highlight: "IDEALAB", sub: "Approved" },
-                        { image: "/istart.png", highlight: "ISTART", sub: "Approved" },
-                        { image: "/IIC.png", highlight: "IIC", sub: "Approved" },
-                        { image: "/ICTA.png", highlight: "ICTACADEMY", sub: "Approved" },
-                        { image: "/iste-logo.png", highlight: "ISTE", sub: "Approved" },
-                        { image: "/IEEE.png", highlight: "IEEE", sub: "Approved" }
-                    ].concat([
-                        { image: "/NAAC.png", highlight: "NAAC A", sub: "Accredited" },
-                        { image: "/nba-logo.png", highlight: "NBA", sub: "Approved" },
-                        { image: "/idealab.png", highlight: "IDEALAB", sub: "Approved" },
-                        { image: "/istart.png", highlight: "ISTART", sub: "Approved" },
-                        { image: "/IIC.png", highlight: "IIC", sub: "Approved" },
-                        { image: "/ICTA.png", highlight: "ICTACADEMY", sub: "Approved" },
-                        { image: "/iste-logo.png", highlight: "ISTE", sub: "Approved" },
-                        { image: "/IEEE.png", highlight: "IEEE", sub: "Approved" }
-                    ]).map((item, index) => (
+                        { image: "/NAAC.png", highlight: "NAAC A", },
+                        { image: "/nba-logo.png", highlight: "NBA", },
+                        { image: "/idealab.png", highlight: "IDEALAB", },
+                        { image: "/istart.png", highlight: "ISTART", },
+                        { image: "/IIC.png", highlight: "INSTITUTION'S INNOVATION COUNCIL", },
+                        { image: "/ICTA.png", highlight: "ICTACADEMY", },
+                        { image: "/iste-logo.png", highlight: "ISTE", },
+                        { image: "/IEEE.png", highlight: "IEEE", }
+                    ].map((item, index) => (
                         <div
                             key={index}
-                            className="inline-flex flex-col items-center justify-center w-[200px] sm:w-[280px] px-2 sm:px-4 flex-shrink-0"
-                        >
-                            <div className="w-24 h-24 sm:w-32 sm:h-32 bg-white border-4 border-[#00d4ff] rounded-full mb-4 relative z-10 flex items-center justify-center overflow-hidden shadow-[0_4px_15px_rgba(0,212,255,0.3)]">
+                            className="inline-flex flex-col items-center justify-start w-[240px] sm:w-[320px] px-6 flex-shrink-0 h-full">
+                            <div className="w-24 h-24 sm:w-32 sm:h-32 bg-white border-4 border-[#00d4ff] rounded-full mb-6 relative z-10 flex items-center justify-center overflow-hidden shadow-[0_0_25px_rgba(0,212,255,0.6)] group-hover:shadow-[0_0_35px_rgba(0,212,255,0.8)] transition-all duration-300">
                                 <img
                                     loading="lazy"
                                     src={item.image}
                                     alt={item.highlight}
-                                    className="w-[70%] h-[70%] object-contain"
+                                    className="w-[85%] h-[85%] object-contain p-2"
                                 />
                             </div>
-                            <h4 className="text-base sm:text-xl font-bold font-orbitron text-white text-center pb-0.5">{item.highlight}</h4>
-                            <p className="text-gray-400 text-[10px] sm:text-sm font-inter text-center font-medium leading-tight">{item.sub}</p>
+                            <h4 className="w-full text-base sm:text-xl font-bold font-orbitron text-white text-center whitespace-normal leading-tight tracking-wide">{item.highlight}</h4>
+                            <p className="text-gray-400 text-[10px] sm:text-sm font-inter text-center font-medium leading-tight mt-2">{item.sub}</p>
                         </div>
                     ))}
                 </div>

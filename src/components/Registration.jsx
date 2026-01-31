@@ -39,7 +39,7 @@ const Registration = () => {
                                 <h4 className="text-xl font-bold font-orbitron text-white mb-2">Registration Fee</h4>
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-4xl font-bold text-neon-blue">₹250</span>
-                                    <span className="text-sm text-gray-400 font-inter">(Inc. GST)</span>
+                                    <span className="text-sm text-gray-400 font-inter">(Incl. GST)</span>
                                 </div>
                                 <p className="text-gray-400 text-sm mt-2 font-inter">Per Participant | Access to all technical & non-technical events</p>
                             </div>
