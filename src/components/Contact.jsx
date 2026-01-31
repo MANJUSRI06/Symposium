@@ -49,9 +49,9 @@ const Contact = () => {
                                     <h4 className="text-neon-purple font-bold font-orbitron mb-1">Call Us</h4>
                                     <p className="text-gray-300 text-sm font-inter mb-2">Student Co-ordinators:</p>
                                     <p className="text-white font-bold tracking-wide font-inter">+91 89460 92297 - Nega Sri R</p>
-                                    <p className="text-white font-bold tracking-wide font-inter">+91 85085 13234 - Gowtham S</p>
                                     <p className="text-white font-bold tracking-wide font-inter">+91 82201 53508 - Sanjay A</p>
                                     <p className="text-white font-bold tracking-wide font-inter">+91 89250 84660 - Divakar Y N</p>
+                                    <p className="text-white font-bold tracking-wide font-inter">+91 63696 88044 - Gowtham S</p>
                                 </div>
                             </div>
 
