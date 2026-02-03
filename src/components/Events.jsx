@@ -45,7 +45,7 @@ const Events = () => {
                         "Rules & Regulations": [
                             "CTF-based competition",
                             "Challenges include Web, Crypto, Forensics, OSINT, and Security",
-                            "Individual or team participation",
+                            "Individual participation only",
                             "No flag sharing or external help",
                             "No unfair methods or platform attacks",
                             "Points for correct submissions",
