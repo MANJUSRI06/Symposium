@@ -489,7 +489,7 @@ const EventModal = ({ event, onClose }) => {
                                 </div>
                             )}
 
-                            <div className="mt-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                                 <a
                                     href="/arivoli2k26.pdf"
                                     target="_blank"
@@ -498,6 +498,14 @@ const EventModal = ({ event, onClose }) => {
                                 >
                                     <FileText size={20} />
                                     Open Rule Book
+                                </a>
+                                <a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdA9IrRGBZuqQe8oioE-fbSp9CK9H4hYyGi_2HjGw0d2VenEA/viewform?usp=header"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-4 text-center bg-neon-blue hover:bg-white text-black font-bold font-orbitron rounded-xl hover:shadow-[0_0_30px_rgba(0,212,255,0.4)] transition-all transform hover:-translate-y-1 uppercase tracking-widest cursor-pointer"
+                                >
+                                    Register for Event
                                 </a>
                             </div>
                         </div>
