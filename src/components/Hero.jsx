@@ -152,24 +152,13 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto"
+                    className="flex justify-center w-full"
                 >
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdA9IrRGBZuqQe8oioE-fbSp9CK9H4hYyGi_2HjGw0d2VenEA/viewform?usp=header"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative px-8 py-4 bg-neon-blue text-black font-bold font-orbitron rounded-xl overflow-hidden shadow-[0_0_20px_rgba(0,212,255,0.4)]"
-                    >
-                        <span className="relative flex items-center justify-center">
-                            REGISTER NOW <ChevronRight className="ml-2 w-5 h-5" />
-                        </span>
-                    </a>
-
                     <a
                         href="/arivoli2k26.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative px-8 py-4 bg-transparent border border-white/20 text-white font-bold font-orbitron rounded-xl overflow-hidden"
+                        className="relative px-8 py-4 bg-transparent border border-white/20 text-white font-bold font-orbitron rounded-xl overflow-hidden hover:bg-white/5 transition-all"
                     >
                         <span className="relative flex items-center justify-center">
                             DOWNLOAD BROCHURE <Download className="ml-2 w-5 h-5" />

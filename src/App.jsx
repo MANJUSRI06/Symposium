@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 // Lazy load below-fold components for better performance
 const Events = lazy(() => import('./components/Events'));
 const Schedule = lazy(() => import('./components/Schedule'));
-const Registration = lazy(() => import('./components/Registration'));
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
@@ -34,7 +33,7 @@ function App() {
                 <Suspense fallback={<LoadingPlaceholder />}>
                     <Events />
                     <Schedule />
-                    <Registration />
+
                     <About />
                     <Contact />
                     <Footer />

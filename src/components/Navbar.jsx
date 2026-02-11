@@ -79,12 +79,7 @@ const Navbar = () => {
                                     )}
                                 </a>
                             ))}
-                            <a
-                                href="#register"
-                                className="ml-4 px-6 py-2 bg-transparent border border-neon-blue text-neon-blue font-orbitron font-bold rounded-lg transition-all duration-300 shadow-[0_0_10px_rgba(0,212,255,0.2)] hover:bg-neon-blue/10 hover:shadow-[0_0_20px_rgba(0,212,255,0.4)]"
-                            >
-                                REGISTER
-                            </a>
+
                         </div>
                     </div>
 
@@ -120,13 +115,7 @@ const Navbar = () => {
                                     {link.name}
                                 </a>
                             ))}
-                            <a
-                                href="#register"
-                                onClick={() => setIsOpen(false)}
-                                className="block w-full text-center mt-4 px-6 py-3 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 border border-neon-blue/50 text-white font-orbitron font-bold rounded-lg shadow-[0_0_15px_rgba(0,212,255,0.1)]"
-                            >
-                                REGISTER NOW
-                            </a>
+
                         </div>
                     </motion.div>
                 )}
